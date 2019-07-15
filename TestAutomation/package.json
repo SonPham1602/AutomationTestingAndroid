@@ -8,7 +8,8 @@
     "test2": "mocha --require babel-core/register --no-timeouts testAppDemAndroid.js",
     "test3": "mocha --require babel-core/register --timeouts 15000 testIOS.js",
     "test4": "mocha --require babel-core/register --timeouts 15000 testAppNativeAndroid.js",
-    "test5": "mocha --require babel-core/register --timeouts 15000 testMaterial.js"
+    "test5": "mocha --require babel-core/register --timeouts 15000 testMaterial.js",
+    "test6": "mocha --require babel-core/register --timeouts 15000 testMaterial2.js"
   },
   "author": "",
   "license": "ISC",

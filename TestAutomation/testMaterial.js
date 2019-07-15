@@ -64,7 +64,7 @@ async function main() {
     //     .waitForElementByXPath("//android.widget.TextView[@resource-id='io.github.hidroh.materialistic:id/drawer_account']")
     //     .click();
     // await driver
-    //     .waitForElementById("io.github.hidroh.materialistic:id/edittext_username")
+    //     .waitForElementBßyId("io.github.hidroh.materialistic:id/edittext_username")
     //     .click()
     //     .sendKeys("KobitonTesting")
     // await driver
@@ -127,11 +127,42 @@ async function main() {
         .flick(0,-1000,100)
         .sleep(5000)
         .flick(0,1000,100)
-        //.waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
-        .wairForElementsByClassName("android.widget.FrameLayout")
+        .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
+        .waitForElementsByClassName("android.widget.FrameLayout")
         .then((els) => {
-            els[0].click()
+            els[2].click()
+            .waitForElementById("io.github.hidroh.materialistic:id/content_frame")
+            .sleep(3000)
+            .flick(0,-1200,100)
         })
+       
+        .sleep(10000)
+        .flick(0,-1200,100)
+        .sleep(10000)
+        .flick(0,-1200,100)
+        .sleep(10000)
+        .flick(0,-1200,100)
+        .sleep(10000)
+        .waitForElementByXPath("//android.widget.ImageButton[@content-desc='Navigate up']")
+        .click()
+        .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
+        .waitForElementsByClassName("android.widget.FrameLayout")
+        .then((els) => {
+            els[5].click()
+        })
+        .waitForElementById("io.github.hidroh.materialistic:id/content_frame")
+        .flick(0,-1200,100)
+        .sleep(10000)
+        .flick(0,-1200,100)
+        .sleep(10000)
+        .flick(0,-1200,100)
+        .sleep(10000)
+        .flick(0,-1200,100)
+        .sleep(10000)
+
+        
+        
+
         
         
         //let pageSource = await driver.source()
