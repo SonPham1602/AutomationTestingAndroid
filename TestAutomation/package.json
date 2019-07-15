@@ -1,0 +1,23 @@
+{
+  "name": "testautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "TestAutomation.js",
+  "scripts": {
+    "test": "mocha TestAutomation.js",
+    "test2": "mocha --require babel-core/register --no-timeouts testAppDemAndroid.js",
+    "test3": "mocha --require babel-core/register --timeouts 15000 testIOS.js",
+    "test4": "mocha --require babel-core/register --timeouts 15000 testAppNativeAndroid.js",
+    "test5": "mocha --require babel-core/register --timeouts 15000 testMaterial.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "wd": "^1.11.2",
+    "xmldom": "^0.1.27"
+  }
+}

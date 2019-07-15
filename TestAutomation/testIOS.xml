@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><AppiumAUT><XCUIElementTypeApplication type="XCUIElementTypeApplication" name="iFixit" label="iFixit" enabled="true" visible="true" x="0" y="0" width="320" height="568">
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" x="0" y="0" width="320" height="568">
+    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="320" height="568">
+      <XCUIElementTypeImage type="XCUIElementTypeImage" name="Default-568h" enabled="true" visible="true" x="0" y="0" width="320" height="568"/>
+      <XCUIElementTypeButton type="XCUIElementTypeButton" name="START A REPAIR" label="START A REPAIR" enabled="true" visible="true" x="51" y="292" width="218" height="45"/>
+    </XCUIElementTypeOther>
+  </XCUIElementTypeWindow>
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="false" x="0" y="0" width="320" height="568">
+    <XCUIElementTypeStatusBar type="XCUIElementTypeStatusBar" enabled="true" visible="false" x="0" y="0" width="320" height="0"/>
+  </XCUIElementTypeWindow>
+</XCUIElementTypeApplication></AppiumAUT>

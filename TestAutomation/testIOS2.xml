@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><AppiumAUT><XCUIElementTypeApplication type="XCUIElementTypeApplication" name="iFixit" label="iFixit" enabled="true" visible="true" x="0" y="0" width="320" height="568">
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" x="0" y="0" width="320" height="568">
+    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="320" height="568">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="320" height="20"/>
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="320" height="568">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="320" height="568">
+          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="320" height="568">
+            <XCUIElementTypeNavigationBar type="XCUIElementTypeNavigationBar" name="CategoriesView" enabled="true" visible="true" x="0" y="20" width="320" height="44">
+              <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="false" x="0" y="0" width="320" height="64">
+                <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="false" x="0" y="64" width="320" height="1"/>
+              </XCUIElementTypeImage>
+              <XCUIElementTypeButton type="XCUIElementTypeButton" name="Back" label="Back" enabled="true" visible="false" x="8" y="31" width="21" height="22"/>
+              <XCUIElementTypeImage type="XCUIElementTypeImage" name="iPhone-ifixit-logo.png" enabled="true" visible="true" x="82" y="25" width="154" height="34"/>
+              <XCUIElementTypeButton type="XCUIElementTypeButton" name="Favorites" label="Favorites" enabled="true" visible="true" x="242" y="27" width="70" height="30"/>
+            </XCUIElementTypeNavigationBar>
+            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="320" height="568">
+              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="320" height="568">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="64" width="320" height="455">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="64" width="320" height="88">
+                    <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="true" x="0" y="64" width="320" height="44"/>
+                    <XCUIElementTypeSearchField type="XCUIElementTypeSearchField" name="Search" label="Search" enabled="true" visible="true" x="8" y="72" width="304" height="28"/>
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="108" width="320" height="44">
+                      <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="false" x="0" y="108" width="320" height="44"/>
+                      <XCUIElementTypeSegmentedControl type="XCUIElementTypeSegmentedControl" name="scopeBar" enabled="true" visible="false" x="8" y="115" width="304" height="29">
+                        <XCUIElementTypeButton type="XCUIElementTypeButton" value="1" name="Guides" label="Guides" enabled="true" visible="false" x="8" y="115" width="151" height="29"/>
+                        <XCUIElementTypeButton type="XCUIElementTypeButton" name="Categories" label="Categories" enabled="true" visible="false" x="160" y="115" width="152" height="29"/>
+                      </XCUIElementTypeSegmentedControl>
+                    </XCUIElementTypeOther>
+                  </XCUIElementTypeOther>
+                  <XCUIElementTypeImage type="XCUIElementTypeImage" name="qr-icon.png" enabled="true" visible="false" x="275" y="73" width="25" height="25"/>
+                  <XCUIElementTypeTable type="XCUIElementTypeTable" enabled="true" visible="true" x="0" y="106" width="320" height="462">
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="106" width="320" height="22">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Categories" name="Categories" label="Categories" enabled="true" visible="false" x="0" y="106" width="320" height="22"/>
+                    </XCUIElementTypeOther>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="128" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Apparel" name="Apparel" label="Apparel" enabled="true" visible="true" x="15" y="128" width="270" height="43"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="171" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Appliance" name="Appliance" label="Appliance" enabled="true" visible="true" x="15" y="171" width="270" height="44"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="215" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Camera" name="Camera" label="Camera" enabled="true" visible="true" x="15" y="215" width="270" height="43"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="258" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Car and Truck" name="Car and Truck" label="Car and Truck" enabled="true" visible="true" x="15" y="258" width="270" height="44"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="302" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Computer Hardware" name="Computer Hardware" label="Computer Hardware" enabled="true" visible="true" x="15" y="302" width="270" height="43"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="345" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Electronics" name="Electronics" label="Electronics" enabled="true" visible="true" x="15" y="345" width="270" height="44"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="389" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Game Console" name="Game Console" label="Game Console" enabled="true" visible="true" x="15" y="389" width="270" height="43"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="432" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Household" name="Household" label="Household" enabled="true" visible="true" x="15" y="432" width="270" height="44"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="476" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Mac" name="Mac" label="Mac" enabled="true" visible="true" x="15" y="476" width="270" height="43"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="519" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Media Player" name="Media Player" label="Media Player" enabled="true" visible="false" x="15" y="519" width="270" height="44"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="563" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="PC" name="PC" label="PC" enabled="true" visible="false" x="15" y="563" width="270" height="43"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="606" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Phone" name="Phone" label="Phone" enabled="true" visible="false" x="0" y="0" width="270" height="43"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="650" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Skills" name="Skills" label="Skills" enabled="true" visible="false" x="0" y="0" width="270" height="43"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="693" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Tablet" name="Tablet" label="Tablet" enabled="true" visible="false" x="0" y="0" width="270" height="43"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="737" width="320" height="44">
+                      <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Vehicle" name="Vehicle" label="Vehicle" enabled="true" visible="false" x="0" y="0" width="270" height="43"/>
+                    </XCUIElementTypeCell>
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Categories" label="Categories" enabled="true" visible="true" x="0" y="106" width="320" height="22"/>
+                  </XCUIElementTypeTable>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="151" width="320" height="44">
+                    <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Scan QR Code" name="Scan QR Code" label="Scan QR Code" enabled="true" visible="false" x="74" y="162" width="122" height="21"/>
+                    <XCUIElementTypeImage type="XCUIElementTypeImage" name="qr-icon.png" enabled="true" visible="false" x="217" y="158" width="30" height="30"/>
+                  </XCUIElementTypeOther>
+                </XCUIElementTypeOther>
+              </XCUIElementTypeOther>
+            </XCUIElementTypeOther>
+          </XCUIElementTypeOther>
+        </XCUIElementTypeOther>
+      </XCUIElementTypeOther>
+      <XCUIElementTypeTabBar type="XCUIElementTypeTabBar" enabled="true" visible="false" x="0" y="519" width="0" height="49">
+        <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="false" x="0" y="518" width="0" height="1"/>
+        <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="false" x="0" y="519" width="0" height="49"/>
+        <XCUIElementTypeButton type="XCUIElementTypeButton" value="1" name="Guides" label="Guides" enabled="true" visible="false" x="2" y="522" width="0" height="0"/>
+        <XCUIElementTypeButton type="XCUIElementTypeButton" name="Answers" label="Answers" enabled="true" visible="false" x="2" y="522" width="0" height="0"/>
+        <XCUIElementTypeButton type="XCUIElementTypeButton" name="More Info" label="More Info" enabled="true" visible="false" x="2" y="522" width="0" height="0"/>
+      </XCUIElementTypeTabBar>
+    </XCUIElementTypeOther>
+  </XCUIElementTypeWindow>
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="false" x="0" y="0" width="320" height="568">
+    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="320" height="568">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="568" width="320" height="0"/>
+    </XCUIElementTypeOther>
+  </XCUIElementTypeWindow>
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" x="0" y="0" width="320" height="568">
+    <XCUIElementTypeStatusBar type="XCUIElementTypeStatusBar" enabled="true" visible="true" x="0" y="0" width="320" height="20">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="320" height="20"/>
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="320" height="20">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" name="No Service" label="No Service" enabled="true" visible="true" x="6" y="0" width="62" height="20"/>
+        <XCUIElementTypeOther type="XCUIElementTypeOther" value="SSID" name="3 of 3 Wi-Fi bars" label="3 of 3 Wi-Fi bars" enabled="true" visible="true" x="73" y="0" width="13" height="20"/>
+        <XCUIElementTypeOther type="XCUIElementTypeOther" name="10:58" label="10:58" enabled="true" visible="true" x="145" y="0" width="34" height="20"/>
+        <XCUIElementTypeOther type="XCUIElementTypeOther" name="100% battery power, Charging" label="100% battery power, Charging" enabled="true" visible="true" x="248" y="0" width="67" height="20"/>
+        <XCUIElementTypeOther type="XCUIElementTypeOther" name="100% battery power" label="100% battery power" enabled="true" visible="true" x="248" y="0" width="31" height="20"/>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeStatusBar>
+  </XCUIElementTypeWindow>
+</XCUIElementTypeApplication></AppiumAUT>
