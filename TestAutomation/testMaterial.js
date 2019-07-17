@@ -54,12 +54,19 @@ async function main() {
 
         throw err
     }
-  
+
 
     await driver.sleep(3000);
     await driver
         .waitForElementByXPath("//android.widget.ImageButton[@content-desc='Open drawer']")
-        .click();
+        .click()
+        .waitForElementByXPath("//android.widget.TextView[@resource-id='io.github.hidroh.materialistic:id/drawer_account']")
+        .click()
+        .waitForElementById("android:id/text1")
+        .click()
+        .waitForElementById("android:id/button1")
+        .click()
+        .sleep(3000)
     // await driver
     //     .waitForElementByXPath("//android.widget.TextView[@resource-id='io.github.hidroh.materialistic:id/drawer_account']")
     //     .click();
@@ -76,7 +83,7 @@ async function main() {
     //     .click()
     await driver
         .waitForElementById("io.github.hidroh.materialistic:id/drawer")
-        .flick(0,-300,100)
+        .flick(0, -300, 100)
         .waitForElementById("io.github.hidroh.materialistic:id/drawer_settings")
         .click()
         .waitForElementByXPath("//android.widget.ImageView[@content-desc='More options']")
@@ -91,10 +98,10 @@ async function main() {
         .then((els) => {
             els[2].click()
         })
-        .then(()=>{
-            driver.waitForElementByXPath("//android.widget.TextView[@text='Text size']")
-            .click()
-        })
+        .sleep(3000)
+        .waitForElementByXPath("//android.widget.TextView[@text='Text size']")
+        .click()
+        .sleep(3000)
         .waitForElementByXPath("//android.widget.TextView[@text='Large']")
         .click()
         .waitForElementByXPath("//android.widget.TextView[@text='Font']")
@@ -102,7 +109,7 @@ async function main() {
         .waitForElementByXPath("//android.widget.TextView[@text='Libre Baskerville']")
         .click()
         .waitForElementById("io.github.hidroh.materialistic:id/content_frame")
-        .flick(0,-400,100)
+        .flick(0, -400, 100)
         .back()
         .waitForElementById("io.github.hidroh.materialistic:id/menu_list")
         .click()
@@ -120,70 +127,114 @@ async function main() {
         .back()
         .back()
         .waitForElementById("android:id/list")
-        .flick(0,-1000,100)
+        .flick(0, -1000, 100)
         .sleep(5000)
-        .flick(0,-1000,100)
+        .flick(0, -1000, 100)
         .sleep(5000)
-        .flick(0,-1000,100)
+        .flick(0, -1000, 100)
         .sleep(5000)
-        .flick(0,1000,100)
+        .flick(0, 1000, 100)
+        .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
+        // Select article 2
+        .waitForElementsByClassName("android.widget.FrameLayout")
+        .then((els) => {
+            els[2].click()
+
+        })
+        .sleep(7000)
+        .waitForElementById("io.github.hidroh.materialistic:id/content_frame")
+        .flick(0, -1200, 100)
+        .sleep(5000)
+        .flick(0, -1200, 200)
+        .sleep(10000)
+        .flick(0, -1200, 200)
+        .sleep(10000)
+        .flick(0, +1200, 200)
+        .sleep(10000)
+        .flick(0, +1200, 200)
+        .sleep(10000)
+        .flick(-500, 0, 300)
+        .sleep(5000)
+        .flick(0, -1000, 200)
+        .back()
+        .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
+        .waitForElementsByClassName("android.widget.FrameLayout")
+        //Select article 5
+        .then((els) => {
+            els[3].click()
+        })
+        .sleep(7000)
+        .waitForElementById("io.github.hidroh.materialistic:id/content_frame")
+        .flick(0, -1200, 101)
+        .sleep(10000)
+        .flick(0, -1200, 202)
+        .sleep(10000)
+        .back()
         .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
         .waitForElementsByClassName("android.widget.FrameLayout")
         .then((els) => {
             els[2].click()
-            .waitForElementById("io.github.hidroh.materialistic:id/content_frame")
-            .sleep(3000)
-            .flick(0,-1200,100)
         })
-       
-        .sleep(10000)
-        .flick(0,-1200,100)
-        .sleep(10000)
-        .flick(0,-1200,100)
-        .sleep(10000)
-        .flick(0,-1200,100)
-        .sleep(10000)
-        .waitForElementByXPath("//android.widget.ImageButton[@content-desc='Navigate up']")
-        .click()
+        .sleep(3000)
+        .waitForElementById("io.github.hidroh.materialistic:id/content_frame")
+        .flick(0, -1200, 103)
+        .back()
         .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
         .waitForElementsByClassName("android.widget.FrameLayout")
         .then((els) => {
-            els[5].click()
+            els[3].flick(-1000, 0, 204)
         })
-        .waitForElementById("io.github.hidroh.materialistic:id/content_frame")
-        .flick(0,-1200,100)
-        .sleep(10000)
-        .flick(0,-1200,100)
-        .sleep(10000)
-        .flick(0,-1200,100)
-        .sleep(10000)
-        .flick(0,-1200,100)
-        .sleep(10000)
+        .flick(0, -1000, 300)
+        .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
+        .waitForElementsByClassName("android.widget.FrameLayout")
+        .then((els) => {
+            els[3].flick(-1000, 0, 205)
+        })
+        .flick(-800, 0, 500)
+        .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
+        .waitForElementsByClassName("android.widget.FrameLayout")
+        .then((els) => {
+            els[1].flick(-1000, 0, 200)
+        })
+        .flick(0, 500, 100)
+        .sleep(5000)
+        .waitForElementById("io.github.hidroh.materialistic:id/search_button")
+        .click()
+        .waitForElementById("io.github.hidroh.materialistic:id/search_src_text")
+        .click()
+        .sendKeys('Kobiton')
+        .sleep(3000)
+        .pressKeycode(66)
 
-        
-        
 
-        
-        
-        //let pageSource = await driver.source()
-        //console.log(pageSource);
+
+
+
+
+
+
+
+
+
+    //let pageSource = await driver.source()
+    //console.log(pageSource);
     // let searchElement = await driver
     //     .waitForElementByXPath("//android.widget.ImageView[@resource-id='io.github.hidroh.materialistic:id/search_button']")
     //     .click()
     //     .sendKeys('Hello')
     //     .keys(wd.SPECIAL_KEYS.Enter);
 
-    
+
     // let element = await driver
     //     .waitForElementByXPath("//android.widget.TextView[@resource-id='io.github.hidroh.materialistic:id/title']")
     //     .click();
     // let element2 = await driver
     //     .waitForElementByXPath("//android.widget.TextView[@bounds='[148,848][571,924]']")
     //     .click();
-        // let pageSource = await driver.source()
+    // let pageSource = await driver.source()
     // console.log(pageSource);
     //await driver.sleep(3000);
-   
+
 
 
 

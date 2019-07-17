@@ -52,55 +52,74 @@ async function main() {
         throw err
     }
 
+    await driver.waitForElementById("io.github.hidroh.materialistic:id/search_button")
+    .click()
+    .waitForElementById("io.github.hidroh.materialistic:id/search_src_text")
+    .click()
+    .sendKeys('Kobiton')
+    .sleep(3000)
+    .pressKeycode(66)
+    .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
+    .waitForElementsByClassName("android.widget.FrameLayout")
+    .then( (els) => {
+        els[1].click()
+    })
+    .sleep(5000)
+    .flick(0,-1000,1000)
+    .sleep(10000)
+    .flick(0,-1000,1000)
+    .flick(0,() => {
+        return await driver.waitForElementById("io.github.hidroh.materialistic:id/fullscreen").getSize().height
+    },1000)
 
 
-    await driver.waitForElementById("android:id/list")
-        .flick(0, -1000, 100)
-        .sleep(5000)
-        .flick(0, -1000, 100)
-        .sleep(5000)
-        .flick(0, -1000, 100)
-        .sleep(5000)
-        .flick(0, 1000, 100)
-        .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
-        .waitForElementsByClassName("android.widget.FrameLayout")
-        .then((els) => {
-            els[2].click()
-                .waitForElementById("io.github.hidroh.materialistic:id/content_frame")
-                .sleep(3000)
-                .flick(0, -1200, 100)
-        })
 
-        .sleep(2000)
-        .flick(0, -1200, 100)
-        .sleep(2000)
-        .flick(0, -1200, 100)
-        .sleep(2000)
-        .flick(0, +1200, 100)
-        .sleep(2000)
-        .flick(0, +1200, 100)
-        .sleep(2000)
-        it("Testing navigation",() => {
-            return driver.waitForElementByXPath("//android.widget.ImageButton[@content-desc='Navigate up']")
-            .click()
-            .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
-            .waitForElementsByClassName("android.widget.FrameLayout")
-            .then((els) => {
-                els[5].click()
-            })
-            .waitForElementById("io.github.hidroh.materialistic:id/content_frame")
-            .flick(0, -1200, 100)
-            .sleep(10000)
-            .flick(0, -1200, 100)
-            .sleep(10000)
-            .flick(0, -1200, 100)
-            .sleep(10000)
-            .flick(0, -1200, 100)
-            .sleep(10000)
-        });
+
+    // await driver.waitForElementById("android:id/list")
+    //     .flick(0, -1000, 100)
+    //     .sleep(5000)
+    //     .flick(0, -1000, 100)
+    //     .sleep(5000)
+    //     .flick(0, -1000, 100)
+    //     .sleep(5000)
+    //     .flick(0, 1000, 100)
+    //     .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
+    //     .waitForElementsByClassName("android.widget.FrameLayout")
+    //     .then((els) => {
+    //         els[2].click()
+    //             .waitForElementById("io.github.hidroh.materialistic:id/content_frame")
+    //             .sleep(3000)
+    //             .flick(0, -1200, 100)
+    //     })
+
+    //     .sleep(2000)
+    //     .flick(0, -1200, 100)
+    //     .sleep(2000)
+    //     .flick(0, -1200, 100)
+    //     .sleep(2000)
+    //     .flick(0, +1200, 100)
+    //     .sleep(2000)
+    //     .flick(0, +1200, 100)
+    //     .sleep(2000)
+    //     it("Testing navigation",() => {
+    //         return driver.waitForElementByXPath("//android.widget.ImageButton[@content-desc='Navigate up']")
+    //         .click()
+    //         .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
+    //         .waitForElementsByClassName("android.widget.FrameLayout")
+    //         .then((els) => {
+    //             els[5].click()
+    //         })
+    //         .waitForElementById("io.github.hidroh.materialistic:id/content_frame")
+    //         .flick(0, -1200, 100)
+    //         .sleep(10000)
+    //         .flick(0, -1200, 100)
+    //         .sleep(10000)
+    //         .flick(0, -1200, 100)
+    //         .sleep(10000)
+    //         .flick(0, -1200, 100)
+    //         .sleep(10000)
+    //     });
         
-
-
 
 
 
