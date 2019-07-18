@@ -68,9 +68,79 @@ async function main() {
     .flick(0,-1000,1000)
     .sleep(10000)
     .flick(0,-1000,1000)
-    .flick(0,() => {
-        return await driver.waitForElementById("io.github.hidroh.materialistic:id/fullscreen").getSize().height
-    },1000)
+    .back()
+    .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
+    .waitForElementsByClassName("android.widget.FrameLayout")
+    .then( (els) => {
+        els[2].click()
+    })
+    .sleep(5000)
+    .flick(0,-1000,2000)
+    .sleep(10000)
+    .flick(0,-1000,2000)
+    .sleep(10000)
+    .flick(0,-1000,2000)
+    .back()
+    .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
+    .waitForElementsByClassName("android.widget.FrameLayout")
+    .then( (els) => {
+        els[0].flick(-1000,0,500)
+    })
+    .waitForElementById("io.github.hidroh.materialistic:id/search_button")
+    .click()
+    .waitForElementById("io.github.hidroh.materialistic:id/search_src_text")
+    .click()
+    .sendKeys('automation testing')
+    .pressKeycode(66)
+    .waitForElementById("io.github.hidroh.materialistic:id/swipe_layout")
+    .waitForElementsByClassName("android.widget.FrameLayout")
+    .then( (els) => {
+        els[3].click()
+    })
+    .sleep(10000)
+    .flick(0,-500,1000)
+    .sleep(10000)
+    .flick(0,-500,1000)
+    .sleep(10000)
+    .flick(0,-500,1000)
+    .back()
+    .waitForElementByXPath("//android.widget.ImageView[@content-desc='More options']")
+    .click()
+    .waitForElementById("io.github.hidroh.materialistic:id/title")
+    .click()
+    .waitForElementById("io.github.hidroh.materialistic:id/switchWidget")
+    .click()
+    .waitForElementById("io.github.hidroh.materialistic:id/content")
+    .flick(0,1000,500)
+    .waitForElementByXPath("//android.widget.ImageButton[@content-desc='Open drawer']")
+    .click()
+    .waitForElementById("io.github.hidroh.materialistic:id/drawer_favorite")
+    .click()
+    .waitForElementById("io.github.hidroh.materialistic:id/recycler_view")
+    .waitForElementsByClassName("android.widget.RelativeLayout")
+    .then((els) => {
+        els[0].click()
+    })
+    .flick(0,500,500)
+    .sleep(5000)
+    .flick(0,500,500)
+    .sleep(5000)
+    .back()
+    .waitForElementByXPath("(//android.widget.ImageButton[@content-desc='More'])[1]")
+    .click()
+    .waitForElementByXPath("//android.widget.TextView[@text='Add comment']")
+    .click()
+    .waitForElementById("io.github.hidroh.materialistic:id/edittext_body")
+    .click()
+    .sendKeys("A article is very good!!!!")
+    .waitForElementById("io.github.hidroh.materialistic:id/menu_send")
+    .click()
+
+
+    
+    
+
+    
 
 
 
